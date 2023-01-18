@@ -45,7 +45,9 @@
 
 #showcase {
     height: 300px;
+    width: 100%;
     background-image: url('foto.png');
+    background-repeat: no-repeat;
     background-position: center right;
     margin-bottom: 40px;
     text-align: center;
@@ -86,4 +88,28 @@
     position: relative;
     color: rgb(255, 255, 255, 0.4);
     z-index: 0;
+}
+
+@media(max-width: 600px) {
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #showcase {
+        margin-top: 0px;
+        height: 350px;
+    }
+
+    #showcase .conteiner {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #sidebar {
+        margin-top: 15px;
+        float: left;
+        width: 200px;
+        margin-left: 30px;
+    }
 }
